@@ -1,0 +1,15 @@
+/* home.page.scss */
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set tinggi agar container di tengah halaman */
+  }
+  
+  .image-container {
+    max-width: 15%;
+    height: auto;
+    align-items : center;
+  }
+  

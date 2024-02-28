@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title> REGISTRASI PENJUALAN BARANG</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="danger">
+  <ion-card class="welcome-card bg-content">
+    <ion-card-header>
+      <ion-card-title color="primary">Nama Barang</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Silakan isikan form dibawah untuk pendataan penjualan barang!</p>
+      <ion-list>
+        <ion-item>
+          <ion-label position="floating"> Nama Barang</ion-label>
+          <ion-input type="text" [(ngModel)]="nama"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Harga Barang </ion-label>
+          <ion-input type="text" [(ngModel)]="nohp"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Jumlah Barang </ion-label>
+          <ion-input type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Kondisi Barang </ion-label>
+          <ion-input type="text" [(ngModel)]="kondisibarang"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Nama Pembeli </ion-label>
+          <ion-input type="text" [(ngModel)]="namapembeli"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Alamat Pembeli </ion-label>
+          <ion-input type="text" [(ngModel)]="alamatpembeli"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Pilih Metode Pembayaran </ion-label>
+          <ion-select
+            [(ngModel)]="prodi"
+            class="popover-content"
+            placeholder="Pilih prodi"
+          >
+            <ion-select-option value="COD"
+              >COD</ion-select-option
+            >
+            <ion-select-option value="Alfamart"
+              >Alfamart</ion-select-option
+            >
+            <ion-select-option value="Transfer Bank"
+              >Transfer Bank</ion-select-option
+            >
+            <ion-select-option value="Pembayaran Tunai"
+              >Pembayaran Tunai</ion-select-option
+            >
+            
+          </ion-select>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating"> Total Harga Barang</ion-label>
+          <ion-select [(ngModel)]="tahunlulus" placeholder="Pilih tahun lulus">
+            <ion-select-option value="2025">Rp.10.000</ion-select-option>
+            <ion-select-option value="2024">Rp.20.000</ion-select-option>
+            <ion-select-option value="2023">Rp.30.000</ion-select-option>
+            <ion-select-option value="2022">Rp.40.000</ion-select-option>
+            <ion-select-option value="2021">Rp,50.000</ion-select-option>
+            <ion-select-option value="2020">Rp.60.000</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+
+      <div padding>
+        <ion-button
+          expand="block"
+          color="primary"
+          size="medium"
+          (click)="addRegister()"
+        >
+          <ion-icon name="trending-up-outline"></ion-icon> Input Barang
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

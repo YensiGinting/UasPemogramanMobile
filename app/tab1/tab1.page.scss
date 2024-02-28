@@ -1,0 +1,31 @@
+/* src/app/home/home.page.scss */
+
+.image-container {
+    position: relative;
+  }
+  
+  .image-text {
+    position: absolute;
+    bottom: 10px; /* Sesuaikan posisi teks sesuai kebutuhan */
+    left: 10px; /* Sesuaikan posisi teks sesuai kebutuhan */
+    color: #fff; /* Warna teks */
+    font-size: 18px; /* Ukuran teks */
+  }
+
+  /* home.page.scss */
+
+.image-container {
+    max-width: 100%; /* Sesuaikan sesuai kebutuhan */
+    height: auto; /* Mempertahankan aspek rasio */
+  }
+
+  
+  /* home.page.scss */
+
+.image-container {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Centering image horizontally */
+    padding: 10px; /* Sesuaikan sesuai kebutuhan */
+  }
+  
